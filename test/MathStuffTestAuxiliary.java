@@ -15,11 +15,52 @@ import org.junit.Test;
 */
 
 public class MathStuffTestAuxiliary {
-//    /**
-//     * Invokes (@code power(a, b)), and checks for expected value
-//     */
-//    private void checkPower(){}
+    //TODO: implement test cases for the auxiliary methods **ONLY**
 
+    /**
+     * Tests for the auxiliary methods in the class MathStuff
+     */
+
+    /**
+     * Tests for GCD
+     */
+    
+    @Test
+    public void testGCD45_36() {
+        int a = 45;
+        int b = 36;
+
+        int expected = 9;
+        int result = MathStuff.gcd(a, b);
+
+        assertEquals("GCD: ", expected, result);
+    }
+
+    @Test
+    public void testGCD1_2() {
+        int a = 1;
+        int b = 2;
+
+        int expected = 1;
+        int result = MathStuff.gcd(a, b);
+
+        assertEquals("GCD: ", expected, result);
+    }
+
+    @Test
+    public void testGCD2_1() {
+        int a = 1;
+        int b = 2;
+
+        int expected = 1;
+        int result = MathStuff.gcd(b, a);
+
+        assertEquals("GCD: ", expected, result);
+    }
+
+    /**
+     * Tests for primeFactors
+     */
 
 
 }

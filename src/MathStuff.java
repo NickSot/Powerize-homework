@@ -1,6 +1,8 @@
 //# BEGIN SKELETON
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.BinaryOperator;
 
 /**
  * Library with static mathematical functions.
@@ -112,18 +114,121 @@ public abstract class MathStuff {
      *      e <= \result.exponent)}
      */
     public static Power powerize(int n) throws IllegalArgumentException {
-        if (n < 2)
-            throw new IllegalArgumentException("The argument must have a value of at least 2.");
+        // TODO: Implement using Test Driven Development
 
-        return new Power(1, 1);
-//# BEGIN TODO Implementation of powerize
-// Replace this line
-//# END TODO
+        if (n < 2) {
+            throw new IllegalArgumentException("The argument must have a value of at least 2.");
+        }
+
+        /**
+         * find the prime factors of n (bases)
+         * and derive their count during the factorization process (exponents)
+         */
+
+        List<Power> primePowers = primeFactors(n);
+
+        //find the greatest common divisor amongst the exponents
+        int maximalExponent = findMaximalExponent(primePowers);
+        List<Long> bases = findCorrespondingBases(maximalExponent, primePowers);
+        long resultBase = findMaximalBase(bases);
+
+        return new Power((int)resultBase, maximalExponent);
     }
 
-//# BEGIN TODO Contracts and implementations of auxiliary functions.
-// Replace this line
-//# END TODO
+    // TODO Contracts and implementations of auxiliary functions.
+
+    /**
+     *
+     * @param bases
+     */
+    public static long findMaximalBase(List<Long> bases) {
+        long result = 1;
+
+        for (int i = 0; i < bases.size(); i++) {
+            result *= bases.get(i);
+        }
+
+        return result;
+    }
+
+    /**
+     *
+     * @param maximalExponent
+     * @param primePowers
+     * @return
+     */
+    public static List<Long> findCorrespondingBases(int maximalExponent, List<Power> primePowers) {
+        ArrayList<Long> bases = new ArrayList<>();
+
+        for (Power item : primePowers) {
+            bases.add(power(item.base, item.exponent/maximalExponent));
+        }
+
+        return bases;
+    }
+
+    /**
+     * finds the greatest common divisor of the exponents in the parameter list
+     * @param primePowers
+     * @return Power
+     */
+
+    public static int findMaximalExponent(List<Power> primePowers) {
+        //gcd(a,b,c) = gcd(gcd(a,b),c) = gcd(a,gcd(b,c))
+
+        int g = primePowers.get(0).exponent;
+
+        for (int i = 0; i < primePowers.size(); i++) {
+            g = gcd(g, primePowers.get(i).exponent);
+        }
+
+        return g;
+    }
+
+    /** This method returns the greatest common divisor of two numbers
+     * @param a
+     * @param b
+     * @return gcd(a, b)
+     */
+    public static int gcd(int a, int b) {
+        if (b==0) return a;
+        return gcd(b,a % b);
+    }
+
+
+    /**
+     * finds the prime factors of a number, and returns a list of bases and corresponding exponents
+     * @param n
+     * @return List<Power>
+     */
+    public static List<Power> primeFactors(int n)
+    {
+        ArrayList<Power> primeExpoenents = new ArrayList<>();
+        // Variable indicating the exponent
+        int exponent = 0;
+
+        // Find the exponent of 2 that fits in n
+        while (n % 2 == 0) {
+            exponent ++;
+            n /= 2;
+        }
+
+        primeExpoenents.add(new Power(2, exponent));
+
+        //n must now be odd, so start with 3 and increment with 2 each iteration
+        for (int i = 3; i < n; i+=2){
+            exponent = 0;
+
+            while (n % i == 0) {
+                exponent++;
+                n /= i;
+            }
+
+            primeExpoenents.add(new Power(i, exponent));
+        }
+
+        return primeExpoenents;
+    }
 
 }
 //# END SKELETON

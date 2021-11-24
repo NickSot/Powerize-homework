@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02a3ff5f-498b-4f84-9238-9446bd082fcc" name="Default Changelist" comment="" />
+    <list default="true" id="02a3ff5f-498b-4f84-9238-9446bd082fcc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MathStuff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MathStuff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/MathStuffTestAuxiliary.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MathStuffTestAuxiliary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/MathStuffTestTopLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MathStuffTestTopLevel.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="21MpFtBEA4V758229Pa6GyRDTi0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -31,7 +42,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MathStuffTestTopLevel">
+  <component name="RunManager" selected="JUnit.MathStuffTestTopLevel.testSuperLarge">
+    <configuration name="MathStuffTestAuxiliary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Powerize" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MathStuffTestAuxiliary" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MathStuffTestTopLevel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Powerize" />
       <option name="PACKAGE_NAME" value="" />
@@ -51,10 +71,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MathStuffTestTopLevel.testPowerize324" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Powerize" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MathStuffTestTopLevel" />
+      <option name="METHOD_NAME" value="testPowerize324" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MathStuffTestTopLevel.testSuperLarge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Powerize" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MathStuffTestTopLevel" />
+      <option name="METHOD_NAME" value="testSuperLarge" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MathStuffTestTopLevel.testSuperLarge" />
         <item itemvalue="JUnit.MathStuffTestTopLevel" />
         <item itemvalue="JUnit.MathStuffTestTopLevel.testPowerExceptionA" />
+        <item itemvalue="JUnit.MathStuffTestTopLevel.testPowerize324" />
+        <item itemvalue="JUnit.MathStuffTestAuxiliary" />
       </list>
     </recent_temporary>
   </component>
@@ -70,5 +113,16 @@
       <updated>1637760709756</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
