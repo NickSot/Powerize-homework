@@ -24,7 +24,7 @@ public class MathStuffTestAuxiliary {
     /**
      * Tests for GCD
      */
-    
+
     @Test
     public void testGCD45_36() {
         int a = 45;
