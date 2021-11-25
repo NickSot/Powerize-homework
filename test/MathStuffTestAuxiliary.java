@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -108,4 +109,60 @@ public class MathStuffTestAuxiliary {
 
         checkPrimeFactors(115757783, expected);
     }
+
+    /**
+     * Tests for findMaximalExponent
+     */
+
+    private void checkFindMaximalExponent(int expected, ArrayList<MathStuff.Power> powers) {
+        int result = MathStuff.findMaximalExponent(powers);
+
+        assertEquals("Test maximal exponent", expected, result);
+    }
+
+    @Test
+    public void testFindMaximalExponent2_3() {
+        ArrayList<MathStuff.Power> powers = new ArrayList<>();
+
+        powers.add(new MathStuff.Power(3, 2));
+        powers.add(new MathStuff.Power(11, 3));
+
+        checkFindMaximalExponent(1, powers);
+    }
+
+    @Test
+    public void testFindMaximalExponent2_4() {
+        ArrayList<MathStuff.Power> powers = new ArrayList<>();
+
+        powers.add(new MathStuff.Power(2, 2));
+        powers.add(new MathStuff.Power(3, 4));
+
+        checkFindMaximalExponent(2, powers);
+    }
+
+    /**
+     * Tests for findCorrespondingBases
+     */
+
+    private void checkFindCorrespondingBases(int maximalExponent, ArrayList<MathStuff.Power> powers, List<Long> expected) {
+        List<Long> result = MathStuff.findCorrespondingBases(maximalExponent, powers);
+
+        assertArrayEquals("Test finding the corresponding bases to the maximal exponent", expected.toArray(), result.toArray());
+    }
+
+    @Test
+    public void testFindCorrespondingBases2_2_3() {
+        ArrayList<MathStuff.Power> powers = new ArrayList<>();
+
+        powers.add(new MathStuff.Power(3, 4));
+        powers.add(new MathStuff.Power(2, 2));
+
+        List<Long> expected = new ArrayList<>();
+        expected.add(9L);
+        expected.add(2L);
+
+        checkFindCorrespondingBases(2, powers, expected);
+    }
+
+
 }
