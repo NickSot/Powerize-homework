@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02a3ff5f-498b-4f84-9238-9446bd082fcc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MathStuff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MathStuff.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/MathStuffTestAuxiliary.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MathStuffTestAuxiliary.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,7 +41,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MathStuffTestTopLevel.testSuperLarge">
+  <component name="RunManager" selected="JUnit.MathStuffTestAuxiliary">
     <configuration name="MathStuffTestAuxiliary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Powerize" />
       <option name="PACKAGE_NAME" value="" />
@@ -49,30 +51,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MathStuffTestTopLevel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MathStuffTestAuxiliary.testPrimeFactors1157577835669" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Powerize" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MathStuffTestTopLevel" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MathStuffTestTopLevel.testPowerExceptionA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Powerize" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MathStuffTestTopLevel" />
-      <option name="METHOD_NAME" value="testPowerExceptionA" />
+      <option name="MAIN_CLASS_NAME" value="MathStuffTestAuxiliary" />
+      <option name="METHOD_NAME" value="testPrimeFactors1157577835669" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MathStuffTestTopLevel.testPowerize324" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MathStuffTestAuxiliary.testPrimeFactors65" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Powerize" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MathStuffTestTopLevel" />
-      <option name="METHOD_NAME" value="testPowerize324" />
+      <option name="MAIN_CLASS_NAME" value="MathStuffTestAuxiliary" />
+      <option name="METHOD_NAME" value="testPrimeFactors65" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MathStuffTestAuxiliary.testPrimeFactors75" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Powerize" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MathStuffTestAuxiliary" />
+      <option name="METHOD_NAME" value="testPrimeFactors75" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,11 +93,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MathStuffTestTopLevel.testSuperLarge" />
-        <item itemvalue="JUnit.MathStuffTestTopLevel" />
-        <item itemvalue="JUnit.MathStuffTestTopLevel.testPowerExceptionA" />
-        <item itemvalue="JUnit.MathStuffTestTopLevel.testPowerize324" />
         <item itemvalue="JUnit.MathStuffTestAuxiliary" />
+        <item itemvalue="JUnit.MathStuffTestAuxiliary.testPrimeFactors1157577835669" />
+        <item itemvalue="JUnit.MathStuffTestAuxiliary.testPrimeFactors75" />
+        <item itemvalue="JUnit.MathStuffTestAuxiliary.testPrimeFactors65" />
+        <item itemvalue="JUnit.MathStuffTestTopLevel.testSuperLarge" />
       </list>
     </recent_temporary>
   </component>
@@ -116,7 +119,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

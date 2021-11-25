@@ -2,6 +2,7 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.function.BinaryOperator;
 
 /**
@@ -87,6 +88,19 @@ public abstract class MathStuff {
             this.exponent = exponent;
         }
 
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Power power = (Power) o;
+            return base == power.base &&
+                    exponent == power.exponent;
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(base, exponent);
+        }
     } // END RECORD TYPE
 
     /**
@@ -213,10 +227,11 @@ public abstract class MathStuff {
             n /= 2;
         }
 
-        primeExpoenents.add(new Power(2, exponent));
+        if (exponent > 0)
+            primeExpoenents.add(new Power(2, exponent));
 
         //n must now be odd, so start with 3 and increment with 2 each iteration
-        for (int i = 3; i < n; i+=2){
+        for (int i = 3; i <= n; i+=2){
             exponent = 0;
 
             while (n % i == 0) {
@@ -224,7 +239,8 @@ public abstract class MathStuff {
                 n /= i;
             }
 
-            primeExpoenents.add(new Power(i, exponent));
+            if (exponent > 0)
+                primeExpoenents.add(new Power(i, exponent));
         }
 
         return primeExpoenents;
