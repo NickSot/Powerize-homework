@@ -4,6 +4,7 @@
     <list default="true" id="02a3ff5f-498b-4f84-9238-9446bd082fcc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MathStuff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MathStuff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/MathStuffTestAuxiliary.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MathStuffTestAuxiliary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/MathStuffTestTopLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MathStuffTestTopLevel.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +46,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MathStuffTestTopLevel.testPowerize18_2">
+  <component name="RunManager" selected="JUnit.MathStuffTestTopLevel.testSuperLarge2">
     <configuration name="MathStuffTestAuxiliary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Powerize" />
       <option name="PACKAGE_NAME" value="" />
@@ -96,11 +97,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MathStuffTestTopLevel.testPowerize18_2" />
-        <item itemvalue="JUnit.MathStuffTestTopLevel" />
         <item itemvalue="JUnit.MathStuffTestTopLevel.testSuperLarge2" />
-        <item itemvalue="JUnit.MathStuffTestAuxiliary.testFindCorrespondingBases2_2_3" />
         <item itemvalue="JUnit.MathStuffTestAuxiliary" />
+        <item itemvalue="JUnit.MathStuffTestTopLevel" />
+        <item itemvalue="JUnit.MathStuffTestTopLevel.testPowerize18_2" />
+        <item itemvalue="JUnit.MathStuffTestAuxiliary.testFindCorrespondingBases2_2_3" />
       </list>
     </recent_temporary>
   </component>

@@ -204,12 +204,7 @@ public class MathStuffTestTopLevel {
 
     @Test (timeout=20000)
     public void testSuperLarge2() {
-        MathStuff.Power result = MathStuff.powerize(2147483647);
-
-        System.out.println(result.base + " ^ " + result.exponent);
-
-        assertEquals("base", 215, result.base);
-        assertEquals("exponent", 4, result.exponent);
+        checkPowerize(215, 4);
     }
 }
 //# END SKELETON
