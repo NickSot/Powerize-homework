@@ -166,6 +166,7 @@ public abstract class MathStuff {
     }
 
     /**
+     * return the corresponding bases to the changed exponents
      *
      * @param maximalExponent
      * @param primePowers
@@ -217,7 +218,7 @@ public abstract class MathStuff {
      */
     public static List<Power> primeFactors(int n)
     {
-        ArrayList<Power> primeExpoenents = new ArrayList<>();
+        ArrayList<Power> primeExponents = new ArrayList<>();
         // Variable indicating the exponent
         int exponent = 0;
 
@@ -228,7 +229,7 @@ public abstract class MathStuff {
         }
 
         if (exponent > 0)
-            primeExpoenents.add(new Power(2, exponent));
+            primeExponents.add(new Power(2, exponent));
 
         //n must now be odd, so start with 3 and increment with 2 each iteration
         for (int i = 3; i <= n; i+=2){
@@ -240,10 +241,10 @@ public abstract class MathStuff {
             }
 
             if (exponent > 0)
-                primeExpoenents.add(new Power(i, exponent));
+                primeExponents.add(new Power(i, exponent));
         }
 
-        return primeExpoenents;
+        return primeExponents;
     }
 
 }
