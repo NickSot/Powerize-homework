@@ -195,6 +195,22 @@ public class MathStuffTestTopLevel {
     }
 
     /**
+     * check with a boundary case: 3
+     */
+    @Test
+    public void testBoundary3() {
+        checkPowerize(3, 1);
+    }
+
+    /**
+     * check with a boundary case: 2
+     */
+    @Test
+    public void testBoundary2() {
+        checkPowerize(2, 1);
+    }
+
+    /**
      * check with large numbers
      */
     @Test(timeout=10000)
@@ -205,10 +221,6 @@ public class MathStuffTestTopLevel {
     @Test (timeout=20000)
     public void testSuperLarge2() {
         checkPowerize(215, 4);
-
-//        MathStuff.Power result = MathStuff.powerize(2147483647);
-
-//        System.out.println(result.base + " ^ " + result.exponent);
     }
 }
 //# END SKELETON

@@ -219,6 +219,13 @@ public abstract class MathStuff {
     public static List<Power> primeFactors(int n)
     {
         ArrayList<Power> primeExponents = new ArrayList<>();
+
+        if (n == 3) {
+            // 3 is a boundary case
+            primeExponents.add(new Power(3, 1));
+            return primeExponents;
+        }
+
         // Variable indicating the exponent
         int exponent = 0;
 
@@ -232,9 +239,8 @@ public abstract class MathStuff {
             primeExponents.add(new Power(2, exponent));
 
         //n must now be odd, so start with 3 and increment with 2 each iteration
-        for (int i = 3; i <= n; i+=2){
+        for (int i = 3; i <= n; i+=2) {
             if (i * i > n) {
-//                primeExponents.add(new Power(i, 1));
                 break;
             }
 

@@ -45,7 +45,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MathStuffTestAuxiliary">
+  <component name="RunManager" selected="JUnit.MathStuffTestTopLevel">
     <configuration name="MathStuffTestAuxiliary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Powerize" />
       <option name="PACKAGE_NAME" value="" />
@@ -96,8 +96,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MathStuffTestAuxiliary" />
         <item itemvalue="JUnit.MathStuffTestTopLevel" />
+        <item itemvalue="JUnit.MathStuffTestAuxiliary" />
         <item itemvalue="JUnit.MathStuffTestTopLevel.testSuperLarge2" />
         <item itemvalue="JUnit.MathStuffTestTopLevel.testPowerize18_2" />
         <item itemvalue="JUnit.MathStuffTestAuxiliary.testFindCorrespondingBases2_2_3" />
@@ -147,7 +147,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/MathStuff.java</url>
-          <line>251</line>
+          <line>257</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
