@@ -205,6 +205,10 @@ public class MathStuffTestTopLevel {
     @Test (timeout=20000)
     public void testSuperLarge2() {
         checkPowerize(215, 4);
+
+//        MathStuff.Power result = MathStuff.powerize(2147483647);
+
+//        System.out.println(result.base + " ^ " + result.exponent);
     }
 }
 //# END SKELETON

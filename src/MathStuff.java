@@ -232,7 +232,12 @@ public abstract class MathStuff {
             primeExponents.add(new Power(2, exponent));
 
         //n must now be odd, so start with 3 and increment with 2 each iteration
-        for (int i = 3; i <= Math.sqrt(n); i+=2){
+        for (int i = 3; i <= n; i+=2){
+            if (i * i > n) {
+//                primeExponents.add(new Power(i, 1));
+                break;
+            }
+
             exponent = 0;
 
             while (n % i == 0) {
